@@ -9,16 +9,16 @@ public final class ResultsMock {
 
     public static List<AssetItem> getAssetsSuccessMock(){
         List<AssetItem> assets = new ArrayList<AssetItem>();
-        assets.add(AssetItem
-                .builder()
-                .id("bitcoin")
-                .symbol("BTC")
-                .build());
-        assets.add(AssetItem
-                .builder()
-                .id("ethereum")
-                .symbol("ETH")
-                .build());
+        AssetItem item1 = new AssetItem();
+        item1.setId("bitcoin");
+        item1.setSymbol("BTC");
+        assets.add(item1);
+
+        AssetItem item2 = new AssetItem();
+        item2.setId("ethereum");
+        item2.setSymbol("ETH");
+        assets.add(item2);
+
         return  assets;
     }
 
